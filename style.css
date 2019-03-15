@@ -1,0 +1,269 @@
+body {
+    background: #f1f1f1;
+    margin: 0;
+    font-size: 24px;
+}
+
+/* Heading */
+#header {
+    text-align: center;
+    /*background: linear-gradient(to right, white, #2a638e, white);*/
+    background: #2a638e;
+    color: white;
+    padding: 5px;
+    text-shadow: 2px 2px black;
+}
+#header p {
+    font-size: 20px;
+}
+#header img {
+    width: 300px;
+    height: 100%;
+}
+.businessName {
+    font-size: 40px;
+}
+.contactInfo p {
+    display: inline-block;
+    margin: 0 50px;
+}
+.email a {
+    text-decoration: none;
+    color: white;
+}
+.email, .phone {
+    padding: 5px 0;
+}
+
+/* Navigation */
+#nav {
+    text-align: center;
+    padding: 20px 0;
+    background: #f1f1f1;
+}
+.navButton {
+    display: inline-block;
+    margin: 10px 20px;
+    cursor: pointer;
+    background: #2a638e;
+    padding: 10px 30px;
+    color: white;
+    border-radius: 5px;
+    border: 2px solid white;
+    /*font-size: 24px;*/
+     -webkit-transition: color 0.5s, border 0.5s, background 0.5s; /* Safari */
+    transition: color 0.5s, border 0.5s, background 0.5s;
+}
+.navButton a {
+    text-decoration: none;
+    color: inherit;
+}
+.navButton:hover {
+    color: #2a638e;
+    background: #f1f1f1;
+    border: 2px solid #2a638e;
+}
+
+/* Body Information */
+.infoRight, .infoLeft {
+    text-align: center;
+    padding: 25px;
+    border-top: 3px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.infoRight {
+    border-bottom: 3px solid black;
+}
+.infoLeft {
+    margin: 0;
+}
+.headingInfo, .imageHolder {
+    display: inline-block;
+    margin: 0 30px;
+}
+.headingInfo {
+    width: 500px;
+    vertical-align: top;
+}
+.pageHeader {
+    font-size: 30px;
+    color: #2a638e;
+    text-align: center;
+}
+
+.headingInfo p {
+    /*font-size: 24px;*/
+    text-align: left;
+}
+.imageHolder {
+    width: 500px;
+}
+.imageHolder img {
+    width: 100%;
+}
+.infoRight img {
+    width: 300px;
+}
+.mobile {
+    display: none;
+}
+
+/* Credentials */
+.credentials {
+    text-align: center;
+}
+
+.credentialsContainer {
+    display: inline-block;
+    margin: 0 50px;
+    vertical-align: top;
+}
+.credentialsImages img {
+    vertical-align: top;
+}
+.credentialsList  ul{
+    list-style-type: none;
+}
+.credentialsList ul li {
+    /*font-size: 24px;*/
+    text-align: left;
+}
+
+/* Footer */
+.footer {
+    text-align: center;
+    font-size: 12px;
+}
+
+/* ABOUT ME */
+.aboutMeHeader {
+    text-align: center;
+    font-size: 36px;
+    font-weight: bold;
+    color: #2a638e;
+}
+.subHeader {
+    text-align: center;
+    font-size: 30px;
+    font-weight: bold;
+    color: #2a638e;
+}
+.specialties {
+    text-align: center;
+    padding: 25px;
+    border-bottom: 3px solid black;
+}
+.specialtiesSub{
+    display: inline-block;
+    vertical-align: top;
+    width: 400px;
+}
+.specialtiesSub p {
+    /*font-size: 24px;*/
+    font-weight: bold;
+}
+.specialtiesSub ul li {
+    text-align: left;
+}
+.specialtiesSub img {
+    width: 75%;
+    vertical-align: bottom;
+}
+.committment {
+    text-align: center;
+    width: 600px;
+    margin: 0 auto;
+    color: #2a638e;
+    font-weight: bold;
+}
+.committment p {
+    /*font-size: 24px;*/
+}
+
+/*CONTACT US PAGE*/
+.contactUsInfo {
+    width: 500px;
+    text-align: center;
+    margin: 0 auto;
+}
+.contactUsInfo .email a {
+    color: black;
+}
+
+
+@media screen and (max-width: 1189px){
+    .desktop {
+        display: none;
+    }
+    .mobile {
+        display: inline-block;
+    }
+    .infoRight, .infoLeft {
+        display: block;
+    }
+    .imageHolder {
+        margin: 0;
+    }
+    .headingInfo {
+        width: 100%;
+        margin: 0;
+    }   
+}
+
+@media screen and (max-width: 550px){
+    .navButton {
+        font-size: 16px;
+    }
+    .headingInfo {
+        margin: 0;
+    }
+    .headingInfo p {
+        font-size: 18px;
+    }
+    .imageHolder {
+        width: 100%;
+        margin: 0;
+    }
+    .credentialsContainer {
+        margin: 0;
+    }
+    .credentialsList  ul {
+        padding-left: 20px;
+    }
+    .credentialsList ul li {
+        font-size: 18px;
+    }
+    .specialtiesSub{
+        display: inline-block;
+        vertical-align: top;
+        width: 98%;
+    }
+    .specialtiesSub p {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    .specialtiesSub ul li {
+        font-size: 18px;
+    }
+    .committment {
+        width: 95%;
+        margin-bottom: 50px;
+    }
+    .committment p {
+        font-size: 18px;
+    }
+    .contactUsInfo {
+        width: 95%;
+        text-align: center;
+        margin: 0 auto;
+    }
+    .credentials {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .credentialsImages .row {
+        
+    }
+}
